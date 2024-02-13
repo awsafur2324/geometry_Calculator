@@ -1,11 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geometry Calculator</title>
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fontAwsome -->
+    <script
+      src="https://kit.fontawesome.com/28c020b767.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- My css -->
+    <link href="style.css" />
+  </head>
+  <body>
+    <section class="p-8">
+      <header class="bg-[#108fd828] w-full">
+        <div class="flex flex-col p-5">
+          <p class="font-bold text-3xl">Interactive</p>
+          <p class="font-semibold text-lg opacity-50">Geometry Genius</p>
+        </div>
+      </header>
+      <main
+        class="mt-10 gap-5 flex flex-col md:flex-row justify-center items-start"
+      >
+        <div
+          class="p-2 flex flex-wrap gap-5 justify-center items-center w-[100%]"
+        >
+          <!-- div.*6>img+h4+p+.flex>input+p+input+p^btn -->
+          <!-- tringle -->
+          <div
+            class="mt-5 w-[300px] py-5 rounded-2xl flex flex-col justify-center items-center gap-2 shadow-lg border border-cyan-400"
+          >
+          <div class="h-[150px] flex justify-center items-center">
+            <img src="images/triangle.png" class="w-[50%]" />
+          </div>
+            <h4 class="font-bold text-lg">Triangle</h4>
+            <p>Area(A) = 0.5 x b x h</p>
+            <div
+              class="flex flex-row justify-center items-center gap-2 max-w-[80%]"
+            >
+              <input
+                type="number"
+                class="w-[50%] p-2 bg-[#F1F1F1]"
+                placeholder="b"
+              />
+              <p class="text-sm">CM</p>
+              <input
+                type="number"
+                class="w-[50%] p-2 bg-[#F1F1F1]"
+                placeholder="h"
+              />
+              <p class="text-sm">CM</p>
+            </div>
+            <button
+              class="mt-4 p-4 bg-[#1090D8] w-[80%] rounded text-white text-lg font-bold"
+            >
+              Claculate
+            </button>
+          </div>
+          <!-- Rectangle -->
+          <div
+            class="mt-5 w-[300px] py-5 rounded-2xl flex flex-col justify-center items-center gap-2 shadow-lg border border-cyan-400"
+          >
+          <div class="h-[150px] flex justify-center items-center">
+            <img src="images/rectangle.png" class="w-[50%]" />
+          </div>
+            <h4 class="font-bold text-lg">Rectangle</h4>
+            <p>Area(A) = w x l</p>
+            <div
+              class="flex flex-row justify-center items-center gap-2 max-w-[80%]"
+            >
+              <input
+                type="number"
+                class="w-[50%] p-2 bg-[#F1F1F1]"
+                placeholder="w"
+              />
+              <p class="text-sm">CM</p>
+              <input
+                type="number"
+                class="w-[50%] p-2 bg-[#F1F1F1]"
+                placeholder="l"
+              />
+              <p class="text-sm">CM</p>
+            </div>
+            <button
+              class="mt-4 p-4 bg-[#1090D8] w-[80%] rounded text-white text-lg font-bold"
+            >
+              Claculate
+            </button>
+          </div>
+          <!-- Parallelogram -->
+          <div
+            class="mt-5 w-[300px] py-5 rounded-2xl flex flex-col justify-center items-center gap-2 shadow-lg border border-cyan-400"
+          >
+          <div class="h-[150px] flex justify-center items-center">
+            <img src="images/parallelogram.png" class="w-[50%]" />
+          </div>
+            <h4 class="font-bold text-lg">Parallelogram</h4>
+            <p>Area(A) = b x h</p>
+            <div
+              class="flex flex-row justify-center items-center gap-2 max-w-[80%]"
+            >
+              <input
+                type="number"
+                class="w-[50%] p-2 bg-[#F1F1F1]"
+                placeholder="b"
+              />
+              <p class="text-sm">CM</p>
+              <input
+                type="number"
+                class="w-[50%] p-2 bg-[#F1F1F1]"
+                placeholder="h"
+              />
+              <p class="text-sm">CM</p>
+            </div>
+            <button
+              class="mt-4 p-4 bg-[#1090D8] w-[80%] rounded text-white text-lg font-bold"
+            >
+              Claculate
+            </button>
+          </div>
+          <!--  -->
+          <div
+            class="mt-5 w-[300px] py-5 rounded-2xl flex flex-col justify-center items-center gap-2 shadow-lg border border-cyan-400"
+          >
+          <div class="h-[150px] flex justify-center items-center">
+            <img src="images/rhombus.png" class="w-[50%]" />
+          </div>
+            <h4 class="font-bold text-lg">Rhombus</h4>
+            <p>Area(A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
+            <div
+              class="flex flex-row justify-center items-center gap-2 max-w-[80%]"
+            >
+              <input
+                type="number"
+                class="w-[50%] p-2 bg-[#F1F1F1]"
+                placeholder="d1"
+              />
+              <p class="text-sm">CM</p>
+              <input
+                type="number"
+                class="w-[50%] p-2 bg-[#F1F1F1]"
+                placeholder="d2"
+              />
+              <p class="text-sm">CM</p>
+            </div>
+            <button
+              class="mt-4 p-4 bg-[#1090D8] w-[80%] rounded text-white text-lg font-bold"
+            >
+              Claculate
+            </button>
+          </div>
+          <!-- Pentagon -->
+          <div
+            class="mt-5 w-[300px] py-5 rounded-2xl flex flex-col justify-center items-center gap-2 shadow-lg border border-cyan-400"
+          >
+          <div class="h-[150px] flex justify-center items-center">
+            <img src="images/pentagon.png" class="w-[50%]" />
+          </div>
+            <h4 class="font-bold text-lg">Pentagon</h4>
+            <p>Area(A) = 0.5 x p x b</p>
+            <div
+              class="flex flex-row justify-center items-center gap-2 max-w-[80%]"
+            >
+              <input
+                type="number"
+                class="w-[50%] p-2 bg-[#F1F1F1]"
+                placeholder="p"
+              />
+              <p class="text-sm">CM</p>
+              <input
+                type="number"
+                class="w-[50%] p-2 bg-[#F1F1F1]"
+                placeholder="b"
+              />
+              <p class="text-sm">CM</p>
+            </div>
+            <button
+              class="mt-4 p-4 bg-[#1090D8] w-[80%] rounded text-white text-lg font-bold"
+            >
+              Claculate
+            </button>
+          </div>
+          <!-- Ellipse -->
+          <div
+            class="mt-5 w-[300px] py-5 rounded-2xl flex flex-col justify-center items-center gap-2 shadow-lg border border-cyan-400"
+          >
+            <div class="h-[150px] flex justify-center items-center">
+              <img src="images/ellipse.png" class="w-[50%]" />
+            </div>
+            <h4 class="font-bold text-lg">Ellipse</h4>
+            <p>Area(A) = &Pi;ab</p>
+            <div
+              class="flex flex-row justify-center items-center gap-2 max-w-[80%]"
+            >
+              <input
+                type="number"
+                class="w-[50%] p-2 bg-[#F1F1F1]"
+                placeholder="a"
+              />
+              <p class="text-sm">CM</p>
+              <input
+                type="number"
+                class="w-[50%] p-2 bg-[#F1F1F1]"
+                placeholder="b"
+              />
+              <p class="text-sm">CM</p>
+            </div>
+            <button
+              class="mt-4 p-4 bg-[#1090D8] w-[80%] rounded text-white text-lg font-bold"
+            >
+              Claculate
+            </button>
+          </div>
+        </div>
+        <div class="w-[20%] mt-5 text-center shadow-sm">
+          <h2 class="font-bold text-blue-900 text-lg">Area Calculation</h2>
+        </div>
+      </main>
+    </section>
+  </body>
 </html>
