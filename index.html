@@ -6,11 +6,6 @@
     <title>Geometry Calculator</title>
     <!-- tailwind css -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- fontAwsome -->
-    <script
-      src="https://kit.fontawesome.com/28c020b767.js"
-      crossorigin="anonymous"
-    ></script>
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -40,21 +35,23 @@
           <div
             class="mt-5 w-[300px] py-5 rounded-2xl flex flex-col justify-center items-center gap-2 shadow-lg border border-cyan-400"
           >
-          <div class="h-[150px] flex justify-center items-center">
-            <img src="images/triangle.png" class="w-[50%]" />
-          </div>
+            <div class="h-[150px] flex justify-center items-center">
+              <img src="images/triangle.png" class="w-[50%]" />
+            </div>
             <h4 class="font-bold text-lg">Triangle</h4>
             <p>Area(A) = 0.5 x b x h</p>
             <div
               class="flex flex-row justify-center items-center gap-2 max-w-[80%]"
             >
               <input
+                id="traingle1"
                 type="number"
                 class="w-[50%] p-2 bg-[#F1F1F1]"
                 placeholder="b"
               />
               <p class="text-sm">CM</p>
               <input
+                id="traingle2"
                 type="number"
                 class="w-[50%] p-2 bg-[#F1F1F1]"
                 placeholder="h"
@@ -62,6 +59,7 @@
               <p class="text-sm">CM</p>
             </div>
             <button
+              onclick="trainglelike('traingle1','traingle2','Traingle')"
               class="mt-4 p-4 bg-[#1090D8] w-[80%] rounded text-white text-lg font-bold"
             >
               Claculate
@@ -71,21 +69,23 @@
           <div
             class="mt-5 w-[300px] py-5 rounded-2xl flex flex-col justify-center items-center gap-2 shadow-lg border border-cyan-400"
           >
-          <div class="h-[150px] flex justify-center items-center">
-            <img src="images/rectangle.png" class="w-[50%]" />
-          </div>
+            <div class="h-[150px] flex justify-center items-center">
+              <img src="images/rectangle.png" class="w-[50%]" />
+            </div>
             <h4 class="font-bold text-lg">Rectangle</h4>
             <p>Area(A) = w x l</p>
             <div
               class="flex flex-row justify-center items-center gap-2 max-w-[80%]"
             >
               <input
+                id="rectangle1"
                 type="number"
                 class="w-[50%] p-2 bg-[#F1F1F1]"
                 placeholder="w"
               />
               <p class="text-sm">CM</p>
               <input
+                id="rectangle2"
                 type="number"
                 class="w-[50%] p-2 bg-[#F1F1F1]"
                 placeholder="l"
@@ -93,6 +93,7 @@
               <p class="text-sm">CM</p>
             </div>
             <button
+              onclick="rectanglelike('rectangle1','rectangle2','Rectangle')"
               class="mt-4 p-4 bg-[#1090D8] w-[80%] rounded text-white text-lg font-bold"
             >
               Claculate
@@ -102,21 +103,23 @@
           <div
             class="mt-5 w-[300px] py-5 rounded-2xl flex flex-col justify-center items-center gap-2 shadow-lg border border-cyan-400"
           >
-          <div class="h-[150px] flex justify-center items-center">
-            <img src="images/parallelogram.png" class="w-[50%]" />
-          </div>
+            <div class="h-[150px] flex justify-center items-center">
+              <img src="images/parallelogram.png" class="w-[50%]" />
+            </div>
             <h4 class="font-bold text-lg">Parallelogram</h4>
             <p>Area(A) = b x h</p>
             <div
               class="flex flex-row justify-center items-center gap-2 max-w-[80%]"
             >
               <input
+                id="parallelogram1"
                 type="number"
                 class="w-[50%] p-2 bg-[#F1F1F1]"
                 placeholder="b"
               />
               <p class="text-sm">CM</p>
               <input
+                id="parallelogram2"
                 type="number"
                 class="w-[50%] p-2 bg-[#F1F1F1]"
                 placeholder="h"
@@ -124,30 +127,33 @@
               <p class="text-sm">CM</p>
             </div>
             <button
+              onclick="rectanglelike('parallelogram1','parallelogram2','Parallelogram')"
               class="mt-4 p-4 bg-[#1090D8] w-[80%] rounded text-white text-lg font-bold"
             >
               Claculate
             </button>
           </div>
-          <!--  -->
+          <!-- rhombus -->
           <div
             class="mt-5 w-[300px] py-5 rounded-2xl flex flex-col justify-center items-center gap-2 shadow-lg border border-cyan-400"
           >
-          <div class="h-[150px] flex justify-center items-center">
-            <img src="images/rhombus.png" class="w-[50%]" />
-          </div>
+            <div class="h-[150px] flex justify-center items-center">
+              <img src="images/rhombus.png" class="w-[50%]" />
+            </div>
             <h4 class="font-bold text-lg">Rhombus</h4>
             <p>Area(A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
             <div
               class="flex flex-row justify-center items-center gap-2 max-w-[80%]"
             >
               <input
+                id="rhombus1"
                 type="number"
                 class="w-[50%] p-2 bg-[#F1F1F1]"
                 placeholder="d1"
               />
               <p class="text-sm">CM</p>
               <input
+                id="rhombus2"
                 type="number"
                 class="w-[50%] p-2 bg-[#F1F1F1]"
                 placeholder="d2"
@@ -155,6 +161,7 @@
               <p class="text-sm">CM</p>
             </div>
             <button
+              onclick="trainglelike('rhombus1','rhombus2','Rhombus')"
               class="mt-4 p-4 bg-[#1090D8] w-[80%] rounded text-white text-lg font-bold"
             >
               Claculate
@@ -164,21 +171,23 @@
           <div
             class="mt-5 w-[300px] py-5 rounded-2xl flex flex-col justify-center items-center gap-2 shadow-lg border border-cyan-400"
           >
-          <div class="h-[150px] flex justify-center items-center">
-            <img src="images/pentagon.png" class="w-[50%]" />
-          </div>
+            <div class="h-[150px] flex justify-center items-center">
+              <img src="images/pentagon.png" class="w-[50%]" />
+            </div>
             <h4 class="font-bold text-lg">Pentagon</h4>
             <p>Area(A) = 0.5 x p x b</p>
             <div
               class="flex flex-row justify-center items-center gap-2 max-w-[80%]"
             >
               <input
+                id="Pentagon1"
                 type="number"
                 class="w-[50%] p-2 bg-[#F1F1F1]"
                 placeholder="p"
               />
               <p class="text-sm">CM</p>
               <input
+                id="Pentagon2"
                 type="number"
                 class="w-[50%] p-2 bg-[#F1F1F1]"
                 placeholder="b"
@@ -186,6 +195,7 @@
               <p class="text-sm">CM</p>
             </div>
             <button
+              onclick="trainglelike('Pentagon1','Pentagon2','Pentagon')"
               class="mt-4 p-4 bg-[#1090D8] w-[80%] rounded text-white text-lg font-bold"
             >
               Claculate
@@ -204,12 +214,14 @@
               class="flex flex-row justify-center items-center gap-2 max-w-[80%]"
             >
               <input
+                id="Ellipse1"
                 type="number"
                 class="w-[50%] p-2 bg-[#F1F1F1]"
                 placeholder="a"
               />
               <p class="text-sm">CM</p>
               <input
+                id="Ellipse2"
                 type="number"
                 class="w-[50%] p-2 bg-[#F1F1F1]"
                 placeholder="b"
@@ -217,16 +229,22 @@
               <p class="text-sm">CM</p>
             </div>
             <button
+              onclick="Ellipse('Ellipse1','Ellipse2','Ellipse')"
               class="mt-4 p-4 bg-[#1090D8] w-[80%] rounded text-white text-lg font-bold"
             >
               Claculate
             </button>
           </div>
         </div>
-        <div class="w-[20%] mt-5 text-center shadow-sm">
-          <h2 class="font-bold text-blue-900 text-lg">Area Calculation</h2>
+        <div class="w-full md:w-[20%] mt-5 text-center shadow-sm justify-center items-center">
+          <h2 class="font-bold text-blue-900 text-lg text-center">Area Calculation</h2>
+          <div
+            id="ansAdd"
+            class="p-2 text-black text-lg flex flex-col gap-2"
+          ></div>
         </div>
       </main>
     </section>
+    <script src="calculation.js"></script>
   </body>
 </html>
